@@ -79,7 +79,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="javascript:callPart('algo')" 
+                <a class="nav-link collapsed" href="javascript:callPage()" 
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-volume-up"></i>
                     <span>Eu vou treinando querendo melhorar</span></a>
@@ -162,6 +162,9 @@
         
         
         console.log(part)
+    }
+    function callPage(){
+        document.getElementById('contenedor').innerHTML="<iframe width='100%' height='500' src='test.html'></iframe>";
     }
     function reproduccion(audio){
         let decir = new Audio('./audio/'+audio+'.mp3');
